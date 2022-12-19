@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    max-height: 12rem;
+    padding: 2rem;
+}
+
+.github-profile img {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.project-card {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.project-card a {
+    color: #2f80ed;
+}
+
+#project {
+    display: flex;
+    flex-flow: column;
+    color: rgb(178, 172, 162);
+}
+
+#project a {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    margin-right: .5rem;
+}
+
+#project a:hover {
+    font-weight: 700;
+}
+
+
+#project img {
+    height: 100%;
+}
+
+#gallery {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    /* border: 3px solid red; */
+    /* box-sizing: border-box; */
+}
+
+#gallery img {
+    width: 250px;
+    height: 250px;
+    margin: 5rem;
+    /* gap: 2rem; */
+    /* flex: 0 1 33%; */
+}
