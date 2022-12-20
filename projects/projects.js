@@ -28,24 +28,37 @@ const projects = [
 ];
 
 function loadProject(id) {
-    const project = projects.find(project => project.id === id);
-
-    if (project) {
-        const htmlElement = document.getElementById('project');
+    const loadHeader = () => {
+        const htmlElement = document.getElementById("project");
 
         htmlElement.innerHTML = `
         <a href="${project.githubLink}" target="_blank" class="fa fa-github">
             <h3>${project.name}</h3>
         </a>    
         <img src="${project.cardUrl}"/>`;
+    }
 
-        const galleryDiv = document.getElementById('gallery');
+    const loadGallery = () => {
+        const galleryDiv = document.getElementById("gallery");
+
+        const title = galleryDiv.appendChild(document.createElement("h3"));
+        title.innerText = "Gallery"
+
+        const galleryImgs = galleryDiv.appendChild(document.createElement("div"));
+        galleryImgs.id = "gallery-imgs"
 
         project.images.forEach(img => {
-            const imgHtmlElement = galleryDiv.appendChild(document.createElement("img"));
+            const imgHtmlElement = galleryImgs.appendChild(document.createElement("img"));
             imgHtmlElement.src = img;
-        })
+            imgHtmlElement.className = "gallery-img";
+        });
+    }
 
+    const project = projects.find(project => project.id === id);
+
+    if (project) {
+        loadHeader();
+        loadGallery();
     }
 }
 

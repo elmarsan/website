@@ -62,20 +62,26 @@ main {
 
 #gallery {
     display: flex;
-    flex-flow: row;
-    justify-content: center;
+    flex-flow: column;
     align-items: center;
-
-    width: 100%;
-
-    /* border: 3px solid red; */
-    /* box-sizing: border-box; */
 }
 
-#gallery img {
-    width: 250px;
-    height: 250px;
-    margin: 5rem;
-    /* gap: 2rem; */
-    /* flex: 0 1 33%; */
+#gallery-imgs {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-img {
+    width: 30%;
+    height: 100%;
+}
+
+main {
+    padding: 0 5%;
+}
+
+#description h3{
+    text-align: center;
 }

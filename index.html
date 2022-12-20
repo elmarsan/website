@@ -9,20 +9,13 @@
 </head>
 
 <body>
-    <nav>
-        <h3>Elías Martínez</h3>
-
-        <div class="items">
-            <ul>
-                <li>
-                    <a href="./projects/projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="./static/cv.pdf" target="_blank">Resume</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <script src="./template.js"></script>
+    <script type="text/javascript">
+        loadNav([
+            { url: "./projects/projects.html", name: "Projects", blank: false },
+            { url: "./static/cv.pdf", name: "Resume", blank: true },
+        ]);
+    </script>
 
     <header>
         <div class="info">
@@ -54,15 +47,7 @@
             </div>
         </div>
     </main>
-
-    <footer>
-        <div>© 2023 Elías Martínez</div>
-        <div class="icon">
-            <a href="https://github.com/elmarsan" target="_blank" class="fa fa-github"></a>
-            <a href="https://linkedin.com/in/elias-martinez-74b07617a" target="_blank" class="fa fa-linkedin"></a>
-        </div>
-    </footer>
-
 </body>
 
+<script type="text/javascript">loadFooter()</script>
 </html>

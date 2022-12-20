@@ -7,30 +7,33 @@
     <link rel="stylesheet" href="./projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Elías</title>
+    <script src="../template.js"></script>
+    <script src="./projects.js"></script>
 </head>
 
 <body>
-    <nav>
-        <h3>Elías Martínez</h3>
-
-        <div class="items">
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./static/cv.pdf" target="_blank">Resume</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <script type="text/javascript">
+        loadNav([
+            { url: "../index.html", name: "Home", blank: false },
+            { url: "./static/cv.pdf", name: "Resume", blank: true },
+        ]);
+    </script>
 
     <header>
         <div id="project"></div>
     </header>
 
     <main>
-        <h3>Gallery</h3>
+        <div id="description">
+            <h3>Description</h3>
+            <p>Since I was a child I have played with emulators. I knew they are complex to programe. But I understimated how complex this task can be.</p>
+            <p>People experienced building emulator recommend to start digging in this world by doing the chip8. Hence this is the kind of proyect we could consider the "Hello World" of emulation.</p>
+            <p>Personally I enjoyed this project like a child. It was very funny to come back and review some low-level computing fundamentals.</p>
+
+            <br/>
+
+            <p>I would like to recommend everyone to give a try to chip8 emulation and do your own implementation.</p>
+        </div>
         <div id="gallery"/>
     </main>
 
@@ -44,7 +47,8 @@
 
 </body>
 
-<script src="./projects.js"></script>
-<script type="text/javascript">loadProject("chip8");</script>
-
+<script type="text/javascript">
+    loadProject("chip8");
+    loadFooter();
+</script>
 </html>
