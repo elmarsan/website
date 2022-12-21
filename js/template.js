@@ -6,8 +6,8 @@ function loadFooter() {
     <footer>
         <div>© 2023 Elías Martínez</div>
         <div id="footer-icons">
-            <a href="https://github.com/elmarsan" target="_blank" class="fa fa-github"></a>
-            <a href="https://linkedin.com/in/elias-martinez-74b07617a" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com/elmarsan" target="_blank" class="fa-brands fa-github"></a>
+            <a href="https://linkedin.com/in/elias-martinez-74b07617a" target="_blank" class="fa-brands fa-linkedin"></a>
         </div>
     </footer>`;
 }
