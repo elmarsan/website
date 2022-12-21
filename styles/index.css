@@ -10,7 +10,13 @@ main div {
 #contact {
     width: 100%;
     display: flex;
+    flex-flow: column;
     justify-content: flex-start;
+}
+
+#contact h3 {
+    text-align: center;
+    margin-bottom: -1rem;
 }
 
 #contact ul {

@@ -2,7 +2,7 @@ function loadFooter() {
     const body = document.getElementsByTagName("BODY")[0];
     const footer = body.appendChild(document.createElement("footer"));
 
-    footer.innerHTML = `
+    footer.outerHTML = `
     <footer>
         <div>© 2023 Elías Martínez</div>
         <div id="footer-icons">
@@ -26,8 +26,8 @@ function loadNav(tabs) {
         }
     });
 
-    const body = document.getElementsByTagName("BODY")[0];
-    const nav = body.appendChild(document.createElement("nav"));
+    const content = document.getElementById("layout");
+    const nav = content.appendChild(document.createElement("nav"));
 
     const title = nav.appendChild(document.createElement("h3"));
     title.innerText = "Elías Martínez";

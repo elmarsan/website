@@ -14,27 +14,29 @@
 </head>
 
 <body>
-    <script type="text/javascript">
-        loadNav([
-            { url: "../index.html", name: "Home", blank: false },
-            { url: "../static/cv.pdf", name: "Resume", blank: true },
-        ]);
-    </script>
-
-    <header>
-        <div id="header-github">
-            <h2>My Github profile</h2>
-            <h3>elmarsan</h3>
-            <a href="https://github.com/elmarsan" target="_blank">
-                <img src="https://github-readme-stats.vercel.app/api?username=elmarsan&theme=ayu-mirage&show_icons=true" />
-            </a>
-        </div>
-    </header>
-
-    <main>
-        <h3>Projects</h3>
-        <div id="projects"></div>
-    </main>
+    <div id="layout">
+        <script type="text/javascript">
+            loadNav([
+                { url: "../index.html", name: "Home", blank: false },
+                { url: "../static/cv.pdf", name: "Resume", blank: true },
+            ]);
+        </script>
+    
+        <header>
+            <div id="header-github">
+                <h2>My Github profile</h2>
+                <h3>elmarsan</h3>
+                <a href="https://github.com/elmarsan" target="_blank">
+                    <img src="https://github-readme-stats.vercel.app/api?username=elmarsan&theme=ayu-mirage&show_icons=true" />
+                </a>
+            </div>
+        </header>
+    
+        <main>
+            <h3>Projects</h3>
+            <div id="projects"></div>
+        </main>
+    </div>
 </body>
 
 <script type="text/javascript">

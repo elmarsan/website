@@ -31,11 +31,11 @@ function loadProject(id) {
     const loadHeader = () => {
         const header = document.getElementsByTagName("HEADER")[0];
 
-        const projectCard = header.appendChild(document.createElement("div"));
-        projectCard.className = "project-card";
+        const headerGithub = header.appendChild(document.createElement("div"));
+        headerGithub.id = "header-github";
 
-        projectCard.innerHTML = `
-        <h3 class="mb-1rem">${project.name} (${project.year})</h3>
+        headerGithub.innerHTML = `
+        <h2 class="mb-1rem">${project.name} (${project.year})</h2>
 
         <a href="${project.githubLink}" target="_blank">
             <img src="${project.cardUrl}"/>
@@ -56,6 +56,8 @@ function loadProject(id) {
             const imgHtmlElement = galleryImgs.appendChild(document.createElement("img"));
             imgHtmlElement.src = img;
             imgHtmlElement.className = "gallery-img";
+            imgHtmlElement.width = "330";
+            imgHtmlElement.height = "280";
         });
     }
 
@@ -77,7 +79,7 @@ function loadProjects() {
         projectCard.innerHTML = `
             <h3>
                 ${project.name} (${project.year})
-                ${project.detail ? `<a href="${project.link}">more...</a>` : ''}
+                ${project.detail ? `<a href="${project.link}">more...</a>` : ""}
             </h3>
             <a href="${project.githubLink}" target="_blank">
                 <img src="${project.cardUrl}"/>
