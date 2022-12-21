@@ -27,8 +27,6 @@ body {
 #layout {
     height: calc(100% - 50px);
     overflow: scroll;
-    border: 3px solid purple;
-    box-sizing: border-box;
 }
 
 nav {
