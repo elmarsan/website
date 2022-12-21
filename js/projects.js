@@ -4,7 +4,6 @@ const projects = [
     {
         id: "chip8",
         name: "Chip8 Emulator",
-        tags: ["emulator", "low-level"],
         year: 2022,
         link: "./chip8.html",
         githubLink: "https://github.com/elmarsan/chip8",
@@ -13,29 +12,35 @@ const projects = [
             "https://raw.githubusercontent.com/elmarsan/chip8/master/img/brix_screenshot.png",
             "https://raw.githubusercontent.com/elmarsan/chip8/master/img/pong_screenshot.png",
             "https://raw.githubusercontent.com/elmarsan/chip8/master/img/tetris_screenshot.png"
-        ]
+        ],
+        detail: true,
     },
     {
         id: "galtwallet",
         name: "Android bitcoin wallet",
-        tags: ["bitcoin", "wallet", "bdk"],
         year: 2022,
         link: "#",
-        githubLink: "https://github.com/elmarsan/chip8",
+        githubLink: "https://github.com/elmarsan/galtwallet",
         cardUrl: `https://github-readme-stats.vercel.app/api/pin/?username=elmarsan&repo=galtwallet&theme=${cardTheme}`,
-        images: []
+        images: [],
+        detail: false,
     }
 ];
 
 function loadProject(id) {
     const loadHeader = () => {
-        const htmlElement = document.getElementById("project");
+        const header = document.getElementsByTagName("HEADER")[0];
 
-        htmlElement.innerHTML = `
-        <a href="${project.githubLink}" target="_blank" class="fa fa-github">
-            <h3>${project.name}</h3>
-        </a>    
-        <img src="${project.cardUrl}"/>`;
+        const projectCard = header.appendChild(document.createElement("div"));
+        projectCard.className = "project-card";
+
+        projectCard.innerHTML = `
+        <h3 class="mb-1rem">${project.name} (${project.year})</h3>
+
+        <a href="${project.githubLink}" target="_blank">
+            <img src="${project.cardUrl}"/>
+        </a>   
+        `;
     }
 
     const loadGallery = () => {
@@ -70,9 +75,13 @@ function loadProjects() {
         projectCard.className = "project-card";
 
         projectCard.innerHTML = `
-            <h4>
-                <a href="${project.link}">${project.name}</a>
-            </h4>
-            <img src="${project.cardUrl}"/>`;
+            <h3>
+                ${project.name} (${project.year})
+                ${project.detail ? `<a href="${project.link}">more...</a>` : ''}
+            </h3>
+            <a href="${project.githubLink}" target="_blank">
+                <img src="${project.cardUrl}"/>
+            </a>
+        `;
     });
 }
