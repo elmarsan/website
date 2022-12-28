@@ -1,13 +1,12 @@
-main div {
+#about-me {
     max-width: 39rem;
     line-height: 2rem;
-}
-
-#about-me {
     margin-bottom: 3rem;
 }
 
 #contact {
+    max-width: 39rem;
+    line-height: 2rem;
     width: 100%;
     display: flex;
     flex-flow: column;

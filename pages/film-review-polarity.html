@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="../styles/template.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="stylesheet" href="./film-review-polarity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Elías</title>
+    <script src="../js/template.js"></script>
+    <script src="../js/projects.js"></script>
+</head>
+
+<body>
+    <div id="layout">
+        <script type="text/javascript">
+            loadNav([
+                { url: "../index.html", name: "Home", blank: false },
+                { url: "../static/cv.pdf", name: "Resume", blank: true },
+            ]);
+        </script>
+    
+        <header></header>
+    
+        <main id="project-container">
+            <div id="description">
+                <h3>Description</h3>
+                <p>Well first of all, three years doing that, really? No, not really (fortunately 🤣). This project originally started and ended on 2019 for a final course work. I created a second version in 2020 and final version(v3) at the end of 2022.</p>
+
+                <p>I was studing a Certificate of Higher Education about multiplatform developement when I met Emilio, my teacher of Android and Python. And I have to say that he was one of the first figures in the software world for whom I felt a strong admiration. He amazed me with the ease with which he solved problems and broke down complex concepts in simple explanations</p>
+
+                <p>At that time, he was working on research in a group at the University of Jaume I. His research was primarily focused on deep/machine learning models. He explained to me what was going on there and aroused my great interest, so I decided to do a mini-project to filter tweets and classify the sentiment of the tweet (positive or negative). The tweets were classified with an implementation of Naive Bayes. (Very amateur at the time, but it worked acceptably)</p>
+                <p>As  I was happy with the result I decided to continue with this topic for my final project. I wanted to do something for classify sentiments in Spanish language. But there was a lack of Spanish databases. Then I started building my own one. I did web scrapping in <a href="https://www.filmaffinity.com" target="_blank">filmaffinity</a> during a few days and I obtained 150000 reviews with scores. I am not sharing the script for two reason, the code is horrible and it no longer works due to changes in the website</p>
+
+                <p>As this point I was ready to start playing with deep learning stuff I put special attencion to natural language processing techniques (NLP). I read quite a few articles and some books. The two main sources of this projects came are:</p>
+
+                <div id="books">
+                    <img src="../static/img/keras.png"/>
+                    <img src="../static/img/nlp.png"/>
+                </div>
+            </div>
+
+            <div id="summary">
+                <h3>Summary</h3>
+                <p>I was finally able to create a model with a good accuracy (~76%). The model that's currently in production is a simple fully conencted neural network. I tried lots of models and neural network architectures, you can find all my research in the main respository under the <a href="https://github.com/elmarsan/film-review-polarity/tree/master/research" target="_blank">research</a> folder</p>
+                    
+                <h4>Things achieved with this project</h4>
+                <ul>
+                    <li>Create one of the biggest Spanish dataset <a href="https://drive.google.com/file/d/1yaNh6jRX_hPkS-30AHbFhgy8ffxA70v3/view">download here</a></li>
+                    <li>Learn about deep/machine learning models</li>
+                    <li>Create web application for try the model</li>
+                    <li>Analytical stuff with the dataset</li>
+                </ul>
+                <p></p>
+                <p></p>
+            </div>
+
+            <div id="dataset-metrics">
+                <h3>Dataset analytical metrics</h3>
+                <p>As I told you above the dataset is huge, so there are many possibilities to squeeze it. Here I would like to share with you some metric images.</p>
+
+                <div class="center">
+                    <h4>Review distribution per country (150437)</h4>
+                    <img src="../static/img/choropleth_nreviews.png"/>
+                </div>
+                <div class="center">
+                    <h4>Review scores percentage by dataset</h4>
+                    <img src="../static/img/barchart_scores.png"/>
+                </div>
+                <div class="center">
+                    <h4>Word count for training, validation and test datasets</h4>
+                    <img src="../static/img/violinplot_nwords.png"/>
+                </div>
+                <!-- <div class="wordcloud-metric"> -->
+                    <!-- <img src="../static/img/pos_wordcloud.png"/> -->
+                    <!-- <img src="../static/img/neg_wordcloud.png"/> -->
+                <!-- </div> -->
+            </div>
+
+            <div id="versions">
+                <h3>Versions changelog</h3>
+
+                <h4>V1 (2019)</h4>
+                <ul>
+                    <li>Django</li>
+                    <li>Analytics with Matplotlib</li>
+                </ul>
+
+                <div class="center">
+                    <h4>V1 preview</h4>
+                    <img src="../static/img/film-review-polarity-v1.png"/>
+                </div>
+
+                <h4>V2 (2020)</h4>
+                <ul>
+                    <li>Flask</li>
+                    <li>React (class components)</li>
+                    <li>New user interface</li>
+                    <li>Reponsive Layout</li>
+                    <li>Add latest reviews to the page</li>
+                </ul>
+
+                <div class="center">
+                    <h4>V2 preview</h4>
+                    <img src="../static/img/film-review-polarity-v2.png"/>                
+                </div>
+
+                <h4>V3 (2022)</h4>
+                <ul>
+                    <li>FastApi</li>
+                    <li>React (function components)</li>
+                    <li>New user interface (Dark theme)</li>
+                    <li>Code refactor</li>
+                    <li>Publish with research documents</li>
+                    <li>Analytics improved</li>
+                    <li>Extend the prediction range (Score from 0 to 10)</li>
+                </ul>
+                
+                <div class="center">
+                    <h4>V3 preview (1)</h4>
+                    <img src="../static/img/film-review-polarity-v3-1.png"/>                
+
+                    
+                    <h4>V3 preview (2)</h4>
+                    <img src="../static/img/film-review-polarity-v3-2.png"/>                
+                </div>
+            </div>
+
+            <div id="gallery"></div>
+        </main>
+    </div>
+</body>
+
+<script type="text/javascript">
+    loadProject("film-review-polarity");
+    loadFooter();
+</script>
+</html>

@@ -1,0 +1,26 @@
+#books {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#books img {
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center h4 {
+    border-bottom: 2px solid white;
+}
+
+.center img {
+    width: 80%;
+    height: 80%;
+}

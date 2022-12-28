@@ -39,12 +39,6 @@ header {
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-    #projects {
-        gap: 2rem;
-    }
-} 
-
 .project-card {
     display: flex;
     flex-flow: column;
@@ -69,6 +63,7 @@ header {
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 100%;
 }
 
 #gallery-imgs {
@@ -82,6 +77,24 @@ header {
     margin: 2rem;
 }
 
-#description h3{
-    text-align: center;
+#project-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 4rem;
+    line-height: 2rem;
 }
+
+#project-container a {
+    color: #3391ff;
+}
+
+@media only screen and (max-width: 800px) {
+    #project-container {
+        padding: 0 1.2rem;
+    }
+
+    #projects {
+        gap: 2rem;
+    }
+} 
