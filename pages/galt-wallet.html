@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="../styles/template.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="stylesheet" href="../styles/galt-wallet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Elías</title>
+    <script src="../js/template.js"></script>
+    <script src="../js/projects.js"></script>
+</head>
+
+<body>
+    <div id="layout">
+        <script type="text/javascript">
+            loadNav([
+                { url: "../index.html", name: "Home", blank: false },
+                { url: "../static/cv.pdf", name: "Resume", blank: true },
+            ]);
+        </script>
+    
+        <header></header>
+    
+        <main id="project-container">
+            <div id="description">
+                <h3>Description</h3>
+
+                <p>Yep, another bitcoin wallet. But why? I wanted to see the capabilities of <a href="https://bitcoindevkit.org/">bdk</a>. And I have to admit I was impressed with how it works.</p>
+                <p>Bdk provides you an awesome high level interface for develop bitcoin wallets without difficulties. As far as I explored I think it could be a good option for simple wallet of "beginner friendly wallet's".</p>
+                <p>In my opinion for build more advanced wallets you would need to implement extra features and add external tools for achieve things like managing utxo's or fee estimation. In this point I want to say thanks to the bitcoin development kit team and congratulate them for their great work. When I was doing the project they helped my with a couple of github issues very quickly. The team is very active and they're open to help others.</p>
+
+                <p>Should you use bdk? Yep 100%, it will bost your wallet development project.</p>
+            </div>
+            <div id="gallery"/>
+        </main>
+    </div>
+</body>
+
+<script type="text/javascript">
+    loadProject("galtwallet");
+    loadFooter();
+</script>
+</html>

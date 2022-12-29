@@ -29,11 +29,20 @@ const projects = [
         id: "galtwallet",
         name: "Android bitcoin wallet",
         year: '2022',
-        link: "#",
+        link: "./galt-wallet.html",
         githubLink: "https://github.com/elmarsan/galtwallet",
         cardUrl: `https://github-readme-stats.vercel.app/api/pin/?username=elmarsan&repo=galtwallet&theme=${cardTheme}`,
-        images: [],
-        detail: false,
+        images: [
+            "../static/img/mnemonic-generation-screen.png",
+            "../static/img/mnemonic-validation-success.png",
+            "../static/img/mnemonic-validation-wrong.png",
+            "../static/img/wallet-screen.png" ,
+            "../static/img/tx-history-screen.png",
+            "../static/img/receive-screen.png" ,
+            "../static/img/setup-screen.png" ,
+            "../static/img/settings-screen.png" ,
+        ],
+        detail: true,
     }
 ];
 
@@ -54,6 +63,8 @@ function loadProject(id) {
     }
 
     const loadGallery = () => {
+        if (project.images.length === 0) return;
+
         const galleryDiv = document.getElementById("gallery");
 
         const title = galleryDiv.appendChild(document.createElement("h3"));

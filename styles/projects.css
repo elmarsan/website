@@ -62,8 +62,12 @@ header {
 #gallery {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
+}
+
+#gallery h3 {
+    text-align: start;
 }
 
 #gallery-imgs {
@@ -97,4 +101,4 @@ header {
     #projects {
         gap: 2rem;
     }
-} 
+}
