@@ -43,7 +43,16 @@ const projects = [
             "../static/img/settings-screen.png" ,
         ],
         detail: true,
-    }
+    },
+    {
+        id: "wakame",
+        name: "Wakame http parser/scrapper",
+        year: '2023',
+        githubLink: "https://github.com/elmarsan/wakame",
+        cardUrl: `https://github-readme-stats.vercel.app/api/pin/?username=elmarsan&repo=wakame&theme=${cardTheme}`,
+        images: [],
+        detail: false,
+    },
 ];
 
 function loadProject(id) {
