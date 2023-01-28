@@ -46,7 +46,7 @@ const projects = [
     },
     {
         id: "wakame",
-        name: "Wakame: http parser/scrapper",
+        name: "http parser/scrapper",
         year: '2023',
         githubLink: "https://github.com/elmarsan/wakame",
         cardUrl: `https://github-readme-stats.vercel.app/api/pin/?username=elmarsan&repo=wakame&theme=${cardTheme}`,
@@ -55,12 +55,25 @@ const projects = [
     },
     {
         id: "photosorter",
-        name: "Photosorter: CLI tool for sorting photos",
+        name: "CLI tool for sorting photos",
         year: '2023',
         githubLink: "https://github.com/elmarsan/photosorter",
         cardUrl: `https://github-readme-stats.vercel.app/api/pin/?username=elmarsan&repo=photosorter&theme=${cardTheme}`,
         images: [],
         detail: false,
+    },
+    {
+        id: "guardian",
+        name: " Http file server secured with jwt",
+        year: '2023',
+        link: "./guardian.html",
+        githubLink: "https://github.com/elmarsan/guardian",
+        cardUrl: `https://github-readme-stats.vercel.app/api/pin/?username=elmarsan&repo=guardian&theme=${cardTheme}`,
+        images: [
+            "https://raw.githubusercontent.com/elmarsan/guardian/master/doc/guardian-login.png",
+            "https://raw.githubusercontent.com/elmarsan/guardian/master/doc/guardian-files.png",
+        ],
+        detail: true,
     },
 ];
 

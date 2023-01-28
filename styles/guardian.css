@@ -1,0 +1,17 @@
+img {
+    width: 80%;
+    height: 80%;
+}
+
+#demo {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+#demo-video {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}

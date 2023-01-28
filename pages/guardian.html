@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="../styles/template.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="stylesheet" href="../styles/guardian.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Elías</title>
+    <script src="../js/template.js"></script>
+    <script src="../js/projects.js"></script>
+</head>
+
+<body>
+    <div id="layout">
+        <script type="text/javascript">
+            loadNav([
+                { url: "../index.html", name: "Home", blank: false },
+                { url: "../static/cv.pdf", name: "Resume", blank: true },
+            ]);
+        </script>
+    
+        <header></header>
+    
+        <main id="project-container">
+            <div id="description">
+                <h3>Description</h3>
+                
+                <p>My friend Albert and I reached the conclusion we needed a private file server for sharing our geeky stuff. We could have used cloud solutions like Google drive or Dropbox. But we preferred the approach "Do it by yourself". I built the first prototype in a couple of days and after that I spent a little bit of time brushing the code and make it more cool. The UI is pretty simple and it has a few features. Why nothing else? Because it's all we need.</p> 
+                <p>Guardian is an http microservice writen in Golang. It serves static files from the server. It uses jwt as authentication process to restrict the access of files.</p>    
+
+                <p>After building Guardian I can say that Golang performance is quite amazing. You can upload 1gb files in 300-400 ms. And all of that using practically only the standard library.</p>
+                
+            </div>
+            <div id="demo">
+                <h3>Demo</h3>
+                <video id="demo-video" controls>
+                    <source src="../static/video/guardian.webm" type="video/webm">
+                </video> 
+            </div>
+
+            <div id="gallery"/>
+        </main>
+    </div>
+</body>
+
+<script type="text/javascript">
+    loadProject("guardian");
+    loadFooter();
+</script>
+</html>
