@@ -75,6 +75,16 @@ const projects = [
         ],
         detail: true,
     },
+    {
+        id: "havel",
+        name: "Bitcoin client implementation",
+        year: '2023',
+        // link: "./havel.html",
+        githubLink: "https://github.com/elmarsan/havel",
+        cardUrl: `https://github-readme-stats.vercel.app/api/pin/?username=elmarsan&repo=havel&theme=${cardTheme}`,
+        images: [],
+        detail: false,
+    },
 ];
 
 function loadProject(id) {
